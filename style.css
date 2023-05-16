@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-nav: #7ECBA9;
+    --bg-prim-conteudo: #e4e2e2;
+    --bg-branco: #ffffff;
+}
+
+body, html {
+    height: 100%;
+  }
+
+.navbar {
+    background-color: var(--bg-nav);
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+}
+
+.prim-conteudo {
+    background-color: var(--bg-prim-conteudo);
+    padding: 5%;
+    display: flex;
+    text-align: center;
+    color: #000000;
+
+}
+
+.down-prim-conteudo {
+    background-color: var(--bg-branco);
+    padding: 15%;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.parallax {
+    background-image: url("img-bg-primario.jpg");
+
+    height: 68%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
