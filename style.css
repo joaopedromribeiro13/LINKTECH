@@ -4,9 +4,10 @@
 }
 
 :root {
-    --bg-nav: #7ECBA9;
-    --bg-prim-conteudo: #e4e2e2;
-    --bg-branco: #ffffff;
+    --bg-nav: #e4e2e2;
+    --bg-prim-conteudo: #327e4c;
+    --bg-branco: #e0e0e0;
+    --bg-box: #e0e0e0 ;
 }
 
 body, html {
@@ -15,23 +16,21 @@ body, html {
 
 .navbar {
     background-color: var(--bg-nav);
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 2%;
 }
 
 .prim-conteudo {
-    background-color: var(--bg-prim-conteudo);
+    background-image: url("img-bg-verde-2.jpg");
+    background-repeat: no-repeat;
+    max-width: 1900px;
+    font-size: 20px;
     padding: 5%;
     display: flex;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 
-}
-
-.down-prim-conteudo {
-    background-color: var(--bg-branco);
-    padding: 15%;
 }
 
 h1 {
@@ -39,12 +38,42 @@ h1 {
 }
 
 .parallax {
-    background-image: url("img-bg-primario.jpg");
-
+    background-image: url("img-bg-primario-3.jpg");
+    max-width: 1920px;
     height: 68%;
-
+    align-items: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.parallax h1 {
+    text-align: center;
+    padding: 200px;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.down-prim-conteudo {
+    background-color: var(--bg-branco);
+    padding-top: 50px;
+    /* margin-top: 30px; */
+    padding-left: 1.5%;
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: 33% 32% 33%;
+    grid-template-rows: 400px 400px 400px;
+}
+
+.box-conteudo {
+    box-shadow: 7px 7px 14px #bebebe,
+                -7px -7px 14px #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    max-width: 590px;
+    background-color: var(--bg-box);
+}
+
+
+
