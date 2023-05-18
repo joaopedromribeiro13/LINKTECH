@@ -4,7 +4,8 @@
 }
 
 :root {
-    --bg-nav: #e4e2e2;
+    --bg-footer: #327e4c;
+    --bg-nav: #D9E4DD;
     --bg-prim-conteudo: #327e4c;
     --bg-branco: #e0e0e0;
     --bg-box: #e0e0e0 ;
@@ -24,7 +25,7 @@ body, html {
 .prim-conteudo {
     background-image: url("img-bg-verde-2.jpg");
     background-repeat: no-repeat;
-    max-width: 1900px;
+    max-width: 100%;
     font-size: 20px;
     padding: 5%;
     display: flex;
@@ -35,6 +36,22 @@ body, html {
 
 h1 {
     font-size: 35px;
+}
+
+.animated-title {
+    animation: animacaoTitulo 2s linear infinite; /* Definindo a animação */
+}
+  
+@keyframes animacaoTitulo {
+0% {
+    transform: scale(1); /* Estado inicial do título */
+}
+50% {
+    transform: scale(0.99); /* Estado intermediário do título */
+}
+100% {
+    transform: scale(1); /* Estado final do título */
+}
 }
 
 .parallax {
@@ -50,20 +67,45 @@ h1 {
 
 .parallax h1 {
     text-align: center;
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 10px;
     font-size: 70px;
     color: #ffffff;
 }
 
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-left: 46%;
+    align-items: center;
+    background-color: var(--bg-nav);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+  
+.button:hover {
+    background-color: #539e66;
+    cursor: pointer;
+}
+  
+.button:active {
+    background-color: #539e66;
+}
 .down-prim-conteudo {
     background-color: var(--bg-branco);
     padding-top: 50px;
-    /* margin-top: 30px; */
+    padding-bottom: 100px;
     padding-left: 1.5%;
     display: grid;
     column-gap: 1%;
     grid-template-columns: 33% 32% 33%;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: auto auto auto;
 }
 
 .box-conteudo {
@@ -75,5 +117,35 @@ h1 {
     background-color: var(--bg-box);
 }
 
+.tam-conteudo {
+    margin: 20px;
+}
+
+.titulo-box {
+    text-align: center;
+}
+
+.texto-conteudo {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    text-align: justify;
+
+}
+
+footer {
+    padding: 2%;
+    background-color: var(--bg-footer);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+a img .rede-social {
+    cursor: pointer;
+}
+
+
+  
 
 
